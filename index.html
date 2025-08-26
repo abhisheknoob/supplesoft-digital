@@ -23,6 +23,34 @@
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <style>
+      /* === Mega Menu Fix for Industries === */
+      .nav-outer,
+      .nav.main-menu,
+      .header-style,
+      .sticky-header {
+        z-index: 999;
+        overflow: visible !important;
+      }
+
+      .mega-dropdown .dropdown-menu {
+        width: 850px; /* adjust width */
+        left: -450px;
+        top:100%;
+        right: 0;
+        margin: auto;
+        border: none;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        z-index: 9999;
+      }
+
+      .mega-dropdown:hover > .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
   </head>
 
   <body>
@@ -45,185 +73,210 @@
               <div class="nav-outer">
                 <nav class="nav main-menu">
                   <ul class="navigation">
-                    <li class="current dropdown">
-                      <a href="index.html">Home</a>
+                    <li><a href="page-contact.html">About Us</a></li>
+
+                    <li class="dropdown">
+                      <a href="#">Plans</a>
                       <ul>
-                        <li><a href="index.html">Home page 01</a></li>
-                        <li><a href="index-2.html">Home page 02</a></li>
-                        <li class="dropdown">
-                          <a href="#">Single Styles</a>
-                          <ul>
-                            <li>
-                              <a href="index-1-single.html">Single Style One</a>
-                            </li>
-                            <li>
-                              <a href="index-2-single.html">Single Style Two</a>
-                            </li>
-                          </ul>
+                        <li><a href="page-about.html">SEO Plans</a></li>
+                        <li>
+                          <a href="page-about.html"
+                            >Google Map Local SEO Plans</a
+                          >
                         </li>
-                        <li class="dropdown">
-                          <a href="#">Dark Styles</a>
-                          <ul>
-                            <li>
-                              <a href="index-1-dark.html">Dark Style One</a>
-                            </li>
-                            <li>
-                              <a href="index-2-dark.html">Dark Style Two</a>
-                            </li>
-                          </ul>
+                        <li>
+                          <a href="page-about.html">Ecommerce SEO Plans</a>
                         </li>
-                        <li><a href="index-1-rtl.html">RTL Style One</a></li>
+                        <li><a href="page-testimonial.html">PPC Plans</a></li>
+                        <li>
+                          <a href="page-pricing.html"
+                            >Social Media Marketing Plans</a
+                          >
+                        </li>
                       </ul>
                     </li>
+
                     <li class="dropdown">
-                      <a href="#">Pages</a>
+                      <a href="#">Services</a>
                       <ul>
-                        <li><a href="page-about.html">About</a></li>
                         <li class="dropdown">
-                          <a href="#">Projects</a>
+                          <a href="#">Digital Marketing</a>
                           <ul>
+                            <li><a href="google-ads.html">Google Ads</a></li>
                             <li>
-                              <a href="page-projects.html">Projects List</a>
+                              <a href="page-team-details.html">Instagram Ads</a>
                             </li>
                             <li>
-                              <a href="page-project-details.html"
-                                >Project Details</a
+                              <a href="page-team-details.html"
+                                >Facebook Meta Ads</a
                               >
                             </li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#">Team</a>
-                          <ul>
-                            <li><a href="page-team.html">Team List</a></li>
                             <li>
-                              <a href="page-team-details.html">Team Details</a>
+                              <a href="page-team-details.html">Youtube Ads</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Linkedin</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Amazon Ads</a>
                             </li>
                           </ul>
                         </li>
-                        <li><a href="page-testimonial.html">Testimonial</a></li>
-                        <li><a href="page-pricing.html">Pricing</a></li>
-                        <li><a href="page-faq.html">FAQ</a></li>
-                        <li><a href="page-404.html">Page 404</a></li>
-                      </ul>
-                    </li>
-                   <li class="dropdown">
-                    <a href="#">Services</a>
-                    <ul>
-                      <!-- <li class="dropdown">
-                        <a href="#">DIGITAL MARKETING</a>
-                        <ul>
-                          <li>
-                            <a href="page-projects.html">SEO Services</a>
-                          </li>
-                          <li>
-                            <a href="page-project-details.html">Ecommerce SEO</a>
-                          </li>
-                          <li>
-                            <a href="page-project-details.html">Local SEO</a>
-                          </li>
-                          <li>
-                            <a href="page-project-details.html">Performance Marketing</a>
-                          </li>
-                          <li>
-                            <a href="page-project-details.html">AI SEO</a>
-                          </li>
-                           <li>
-                            <a href="page-project-details.html">Enterprise SEO</a>
-                          </li>
-                           <li>
-                            <a href="page-project-details.html">App Store Optimization(ASO)</a>
-                          </li>
-                           <li>
-                            <a href="page-project-details.html">Social Media Marketing</a>
-                          </li>
-                        </ul>
-                      </li> -->
-                      <li class="dropdown">
-                        <a href="#">Digital Marketing</a>
-                        <ul>
-                          <li><a href="page-team.html">Google Ads</a></li>
-                          <li>
-                            <a href="page-team-details.html">Instagram Ads</a>
-                          </li>
-                          <li>
-                            <a href="page-team-details.html">Faceboom Meta Ads</a>
-                          </li>
-                          <li>
-                            <a href="page-team-details.html">Youtube Ads</a>
-                          </li>
-                          <li>
-                            <a href="page-team-details.html">Linkedin</a>
-                          </li>
-                           <li>
-                            <a href="page-team-details.html">Amazon Ads</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#">PPC Advertising (Paid)</a>
-                        <ul>
-                          <li><a href="page-team.html">Google Ads</a></li>
-                          <li>
-                            <a href="page-team-details.html">Instagram Ads</a>
-                          </li>
-                          <li>
-                            <a href="page-team-details.html">Faceboom Meta Ads</a>
-                          </li>
-                          <li>
-                            <a href="page-team-details.html">Youtube Ads</a>
-                          </li>
-                          <li>
-                            <a href="page-team-details.html">Linkedin</a>
-                          </li>
-                           <li>
-                            <a href="page-team-details.html">Amazon Ads</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#">Web Design & Development</a>
-                        <ul>
-                          <li>
-                            <a href="#">Website Designing</a>
-                          </li>
-                          <li>
-                            <a href="#">Ecommerce Website Design</a>
-                          </li>
-                          <li>
-                            <a href="#">Website Redesign</a>
-                          </li>
-                        </ul>
 
-                      </li>
-                    </ul>
-                  </li>
-                    <li class="dropdown">
-                      <a href="#">Shop</a>
-                      <ul>
-                        <li><a href="shop-products.html">Products</a></li>
-                        <li>
-                          <a href="shop-products-sidebar.html"
-                            >Products with Sidebar</a
-                          >
+                        <li class="dropdown">
+                          <a href="#">PPC Advertising (Paid)</a>
+                          <ul>
+                            <li><a href="page-team.html">Google Ads</a></li>
+                            <li>
+                              <a href="page-team-details.html">Instagram Ads</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html"
+                                >Facebook Meta Ads</a
+                              >
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Youtube Ads</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Linkedin</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Amazon Ads</a>
+                            </li>
+                          </ul>
                         </li>
-                        <li>
-                          <a href="shop-product-details.html"
-                            >Product Details</a
-                          >
+
+                        <li class="dropdown">
+                          <a href="#">Web Design & Development</a>
+                          <ul>
+                            <li><a href="#">Website Designing</a></li>
+                            <li><a href="#">Ecommerce Website Design</a></li>
+                            <li><a href="#">Website Redesign</a></li>
+                          </ul>
                         </li>
-                        <li><a href="shop-cart.html">Cart</a></li>
-                        <li><a href="shop-checkout.html">Checkout</a></li>
                       </ul>
                     </li>
+
+                    <!-- INDUSTRIES converted into mega menu -->
+                    <li class="dropdown mega-dropdown">
+                      <a href="#">Industries</a>
+                      <div class="dropdown-menu mega-menu p-4">
+                        <div class="row">
+                          <div class="col-md-6 shadow-none p-3 mb-1 bg-light rounded">
+                            <h6 class="fw-bold mb-2">Industries</h6>
+                            
+                              <span> <strong>At Supplesoft Digital, we provide tailored SEO services for a wide range of industries including manufacturing, automobile, finance, FMCG, CPG, education, healthcare, real estate, retail, travel, entertainment, and technology. Our strategies are designed to boost online visibility</strong></span>
+                              
+                          </div>
+                          <div class="col-md-2">
+                            <h6>Industrial & Manufacturing</h6>
+                            <ul class="list-unstyled">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="shop-product-details.html"
+                                  >Manufacturing</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="shop-cart.html"
+                                  >Automobile</a
+                                >
+                              </li>
+                             
+                            </ul>
+                          </div>
+                          <div class="col-md-2">
+                           
+                            <ul class="list-unstyled">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="shop-checkout.html"
+                                  >Insurance</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="shop-checkout.html"
+                                  >Entertainment</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="shop-checkout.html"
+                                  >Education</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="shop-checkout.html"
+                                  >Real Estate</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-2">
+                            
+                            <ul class="list-unstyled">
+                               <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="shop-products-sidebar.html"
+                                  >Automobile</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="shop-checkout.html"
+                                  >Travel</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="shop-checkout.html"
+                                  >Healthcare</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="shop-checkout.html"
+                                  >ISP</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="shop-products.html"
+                                  >Manufacturing</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- END Industries Mega Menu -->
+
                     <li class="dropdown">
-                      <a href="#">News</a>
+                      <a href="#">Resources</a>
                       <ul>
-                        <li><a href="news-grid.html">News Grid</a></li>
-                        <li><a href="news-details.html">News Details</a></li>
+                        <li><a href="news-grid.html">Blog</a></li>
+                        <li><a href="news-details.html">Review</a></li>
+                        <li><a href="news-details.html">Presentation</a></li>
+                        <li><a href="news-details.html">Events</a></li>
                       </ul>
                     </li>
-                    <li><a href="page-contact.html">Contact</a></li>
+
+                    <li><a href="page-contact.html">Career</a></li>
                   </ul>
                 </nav>
                 <!-- Main Menu End-->
@@ -337,7 +390,7 @@
           <div class="auto-container">
             <div class="inner-container">
               <!--Logo-->
-              <div class="logo">
+              <div class="logo">ksks
                 <a href="index.html" title=""
                   ><img src="images/logo.png" alt="" title=""
                 /></a>
@@ -378,9 +431,15 @@
                   <h1 data-animation-in="fadeInLeft" data-delay-in="0.2">
                     Average Online Marketing Isn’t Enough
                   </h1>
-                 <div data-animation-in="fadeInUp" data-delay-in="0.3" class="text">
-    <span style="text-transform: uppercase;">b</span>reak free from average—our expert digital marketing takes your brand from ordinary to unforgettable.
-</div>
+                  <div
+                    data-animation-in="fadeInUp"
+                    data-delay-in="0.3"
+                    class="text"
+                  >
+                    <span style="text-transform: uppercase">b</span>reak free
+                    from average—our expert digital marketing takes your brand
+                    from ordinary to unforgettable.
+                  </div>
                   <div class="btn-box">
                     <a
                       href="page-services.html"
@@ -416,9 +475,15 @@
                   <h1 data-animation-in="fadeInLeft" data-delay-in="0.2">
                     Average Online Marketing Isn’t Enough
                   </h1>
-                  <div data-animation-in="fadeInUp" data-delay-in="0.3" class="text">
-    <span style="text-transform: uppercase;">b</span>reak free from average—our expert digital marketing takes your brand from ordinary to unforgettable.
-</div>
+                  <div
+                    data-animation-in="fadeInUp"
+                    data-delay-in="0.3"
+                    class="text"
+                  >
+                    <span style="text-transform: uppercase">b</span>reak free
+                    from average—our expert digital marketing takes your brand
+                    from ordinary to unforgettable.
+                  </div>
                   <div class="btn-box">
                     <a
                       href="page-services.html"
@@ -454,9 +519,15 @@
                   <h1 data-animation-in="fadeInLeft" data-delay-in="0.2">
                     Average Online Marketing Isn’t Enough
                   </h1>
-                  <div data-animation-in="fadeInUp" data-delay-in="0.3" class="text">
-    <span style="text-transform: uppercase;">b</span>reak free from average—our expert digital marketing takes your brand from ordinary to unforgettable.
-</div>
+                  <div
+                    data-animation-in="fadeInUp"
+                    data-delay-in="0.3"
+                    class="text"
+                  >
+                    <span style="text-transform: uppercase">b</span>reak free
+                    from average—our expert digital marketing takes your brand
+                    from ordinary to unforgettable.
+                  </div>
                   <div class="btn-box">
                     <a
                       href="page-services.html"
@@ -1797,7 +1868,8 @@
                     <div class="acc-content">
                       <div class="content">
                         <div class="text">
-                          We provide SEO, social media, PPC, content marketing, and more to grow your online presence.
+                          We provide SEO, social media, PPC, content marketing,
+                          and more to grow your online presence.
                         </div>
                       </div>
                     </div>
@@ -1811,7 +1883,8 @@
                     <div class="acc-content current">
                       <div class="content">
                         <div class="text">
-                          Most campaigns start showing results in 3–6 months, depending on your goals and market.
+                          Most campaigns start showing results in 3–6 months,
+                          depending on your goals and market.
                         </div>
                       </div>
                     </div>
@@ -1825,15 +1898,15 @@
                     <div class="acc-content">
                       <div class="content">
                         <div class="text">
-                          Yes, we tailor strategies for businesses across all sectors and sizes worldwide.
+                          Yes, we tailor strategies for businesses across all
+                          sectors and sizes worldwide.
                         </div>
                       </div>
                     </div>
                   </li>
 
-
                   <!-- block -->
-                   <li class="accordion block">
+                  <li class="accordion block">
                     <div class="acc-btn">
                       How do you measure success?
                       <div class="icon fa fa-angle-down"></div>
@@ -1841,12 +1914,13 @@
                     <div class="acc-content">
                       <div class="content">
                         <div class="text">
-                          We track KPIs like traffic, leads, conversions, and ROI to ensure measurable growth.
+                          We track KPIs like traffic, leads, conversions, and
+                          ROI to ensure measurable growth.
                         </div>
                       </div>
                     </div>
                   </li>
-                   <!-- block -->
+                  <!-- block -->
                   <!--Block-->
                   <li class="accordion block">
                     <div class="acc-btn">
@@ -1856,7 +1930,8 @@
                     <div class="acc-content">
                       <div class="content">
                         <div class="text">
-                          Yes, it targets the right audience, maximizing returns while reducing wasted spend.
+                          Yes, it targets the right audience, maximizing returns
+                          while reducing wasted spend.
                         </div>
                       </div>
                       <!-- <div class="acc-content">
