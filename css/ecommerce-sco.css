@@ -1,0 +1,92 @@
+.ecom-hero {
+        background: linear-gradient(90deg, #ff9900 0%, #4285f4 100%);
+        color: #fff;
+        padding: 60px 0 40px 0;
+        border-radius: 0 0 32px 32px;
+      }
+      .ecom-hero h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 18px;
+      }
+      .ecom-hero p {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+      }
+      .ecom-section-title {
+        font-weight: 600;
+        color: #ff9900;
+        margin-bottom: 32px;
+        font-size: 2rem;
+      }
+      .ecom-benefit-card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(255,153,0,0.08);
+        padding: 32px 24px;
+        text-align: center;
+        margin-bottom: 24px;
+        border: none;
+      }
+      .ecom-benefit-card h5 {
+        color: #4285f4;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      .ecom-service-list li {
+        margin-bottom: 18px;
+        font-size: 1.08rem;
+      }
+      .ecom-why-card {
+        background: #f8fafc;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(255,153,0,0.06);
+        padding: 28px 22px;
+        margin-bottom: 18px;
+        border: none;
+      }
+      .ecom-why-card h5 {
+        color: #ff9900;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .ecom-img-placeholder {
+        background: #e9ecef;
+        border-radius: 16px;
+        min-height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: #888;
+        margin-bottom: 24px;
+      }
+      .ecom-cta {
+        background: linear-gradient(90deg, #ff9900 0%, #4285f4 100%);
+        color: #fff;
+        border-radius: 16px;
+        padding: 40px 24px;
+        text-align: center;
+        margin: 48px 0 0 0;
+      }
+      .ecom-cta a {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 14px 38px;
+        background: #fff;
+        color: #ff9900;
+        font-weight: 600;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 1.15rem;
+        box-shadow: 0 2px 12px rgba(255,153,0,0.10);
+        transition: background 0.2s, color 0.2s;
+      }
+      .ecom-cta a:hover {
+        background: #ff9900;
+        color: #fff;
+      }
+      @media (max-width: 991px) {
+        .ecom-hero h1 { font-size: 2rem; }
+        .ecom-section-title { font-size: 1.5rem; }
+      }

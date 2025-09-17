@@ -32,6 +32,9 @@
         z-index: 999;
         overflow: visible !important;
       }
+      .dropdown_for_mobile{
+        display: none;
+      }
 
       .mega-dropdown .dropdown-menu {
         width: 850px; /* adjust width */
@@ -50,6 +53,16 @@
         opacity: 1;
         visibility: visible;
       }
+      @media (max-width:1200px){
+  .dropdown_for_pc{
+    display: none !important;
+  }
+  .dropdown_for_mobile{
+    display: block !important;
+  }
+      } 
+        
+      
     </style>
   </head>
 
@@ -96,7 +109,7 @@
                       </ul>
                     </li>
 <!-- ...existing code... -->
-<li class="dropdown mega-dropdown" style="position:relative;">
+<li class="dropdown mega-dropdown dropdown_for_pc" style="position:relative;">
   <a href="#">Services</a>
   <div class="dropdown-menu mega-menu p-4" style="width:700px; left:-300px; top:100%; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);">
     <div class="row">
@@ -109,10 +122,10 @@
         </div>
         <ul class="list-unstyled">
           <li class="mb-2">
-            <a href="google-ads.html">SEO Services</a>
+            <a href="sco_service.html">SEO Services</a>
           </li>
           <li class="mb-2">
-            <a href="instragram-ads.html">Ecommerce SEO</a>
+            <a href="ecommerce-sco.html">Ecommerce SEO</a>
           </li>
           <li class="mb-2">
             <a href="facebook-ads.html">Local SEO</a>
@@ -169,6 +182,7 @@
         </ul>
       </div>
       <!-- Web Design & Development Column -->
+       
       <div class="col-md-4">
         <div class="mb-3 pb-2 border-bottom">
           <span class="d-flex align-items-center mb-2" style="font-weight:600;">
@@ -190,7 +204,70 @@
     </div>
   </div>
 </li>
+<!-- ...existing code... -->
 
+
+ <li class="dropdown dropdown_for_mobile">
+                      <a href="#">Services</a>
+                      <ul>
+                        <li class="dropdown">
+                          <a href="#">Digital Marketing</a>
+                          <ul>
+                            <li><a href="google-ads.html">Google Ads</a></li>
+                            <li>
+                              <a href="instragram-ads.html">Instagram Ads</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html"
+                                >Facebook Meta Ads</a
+                              >
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Youtube Ads</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Linkedin</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Amazon Ads</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="dropdown">
+                          <a href="#">PPC Advertising (Paid)</a>
+                          <ul>
+                            <li><a href="page-team.html">Google Ads</a></li>
+                            <li>
+                              <a href="page-team-details.html">Instagram Ads</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html"
+                                >Facebook Meta Ads</a
+                              >
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Youtube Ads</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Linkedin</a>
+                            </li>
+                            <li>
+                              <a href="page-team-details.html">Amazon Ads</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="dropdown">
+                          <a href="#">Web Design & Development</a>
+                          <ul>
+                            <li><a href="#">Website Designing</a></li>
+                            <li><a href="#">Ecommerce Website Design</a></li>
+                            <li><a href="#">Website Redesign</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
 
                     <!-- INDUSTRIES converted into mega menu -->
                     <li class="dropdown mega-dropdown">
